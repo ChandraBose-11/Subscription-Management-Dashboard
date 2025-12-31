@@ -6,7 +6,7 @@ export default function Plans() {
 
   // 🔒 ORIGINAL FUNCTIONALITY (UNCHANGED)
   useEffect(() => {
-    fetch("http://localhost:5000/api/plans")
+    fetch("https://subscription-management-dashboard-1.onrender.com/api/plans")
       .then((res) => res.json())
       .then((data) => setPlans(data));
   }, []);

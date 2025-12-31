@@ -20,7 +20,7 @@ export default function OAuth({ isAdmin = "user" }) {
     try {
       const resultsFromGoogle = await signInWithPopup(auth, provider);
 
-      const res = await fetch(`http://localhost:5000/api/auth/google`, {
+      const res = await fetch(`https://subscription-management-dashboard-1.onrender.com/api/auth/google`, {
         method: "POST",
         credentials: "include",
         headers: { "Content-Type": "application/json" },

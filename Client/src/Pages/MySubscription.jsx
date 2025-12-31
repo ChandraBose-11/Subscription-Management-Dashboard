@@ -4,7 +4,7 @@ export default function MySubscription() {
   const [subscription, setSubscription] = useState(null);
 
   useEffect(() => {
-    fetch("http://localhost:5000/api/subscribe/my-subscription", {
+    fetch("https://subscription-management-dashboard-1.onrender.com/api/subscribe/my-subscription", {
       credentials: "include",
     })
       .then((res) => res.json())

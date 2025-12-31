@@ -33,7 +33,7 @@ export default function DashSidebar() {
   const handleSignout = async () => {
     try {
       const res = await fetch(
-        "http://localhost:5000/api/user/signout",
+        "https://subscription-management-dashboard-1.onrender.com/api/user/signout",
         {
           method: "POST",
           credentials: "include",

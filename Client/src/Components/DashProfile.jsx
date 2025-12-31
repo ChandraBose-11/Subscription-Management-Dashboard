@@ -79,7 +79,7 @@ const DashProfile = () => {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/api/user/update/${currentUser._id}`,
+        `https://subscription-management-dashboard-1.onrender.com/api/user/update/${currentUser._id}`,
         {
           method: "PUT",
           credentials: "include",
@@ -107,7 +107,7 @@ const DashProfile = () => {
     try {
       dispatch(deleteUserStart());
       const res = await fetch(
-        `http://localhost:5000/api/user/delete/${currentUser._id}`,
+        `https://subscription-management-dashboard-1.onrender.com/api/user/delete/${currentUser._id}`,
         {
           method: "DELETE",
           credentials: "include",
@@ -127,7 +127,7 @@ const DashProfile = () => {
 
   const handleSignout = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/api/user/signout`, {
+      const res = await fetch(`https://subscription-management-dashboard-1.onrender.com/api/user/signout`, {
         method: "POST",
         credentials: "include",
       });

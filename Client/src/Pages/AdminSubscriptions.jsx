@@ -23,7 +23,7 @@ export default function AdminSubscriptions() {
     const fetchSubscriptions = async () => {
       try {
         const res = await fetch(
-          "http://localhost:5000/api/subscribe/admin/subscriptions",
+          "https://subscription-management-dashboard-1.onrender.com/api/subscribe/admin/subscriptions",
           {
             credentials: "include",
           }

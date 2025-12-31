@@ -48,7 +48,7 @@ export default function PlanCard({ plan }) {
 
     try {
       const res = await fetch(
-        `http://localhost:5000/api/subscribe/${plan._id}`,
+        `https://subscription-management-dashboard-1.onrender.com/api/subscribe/${plan._id}`,
         { method: "POST", credentials: "include" }
       );
 

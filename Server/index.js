@@ -17,7 +17,8 @@ app.use(cookieParser());``
 
 // ⭐ FIX: Allowed frontend origins
 const allowedOrigins = [
-  "http://localhost:5173"
+  "http://localhost:5173",
+  "https://subscription-manage.netlify.app"
 ];
 
 // ⭐ FIX: SIMPLE CORS → No callback version (prevents CORS crash in Windows)

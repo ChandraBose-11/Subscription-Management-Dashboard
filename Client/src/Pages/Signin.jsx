@@ -24,7 +24,7 @@ const SignIn = () => {
     }
     try {
       dispatch(signInStart());
-      const res = await fetch(`http://localhost:5000/api/auth/signin`, {
+      const res = await fetch(`https://subscription-management-dashboard-1.onrender.com/api/auth/signin`, {
         method: "POST",
         credentials: "include",
         headers: { "Content-Type": "application/json" },

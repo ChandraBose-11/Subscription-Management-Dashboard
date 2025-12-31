@@ -38,7 +38,7 @@ export default function Header() {
 
   const handleSignout = async () => {
     try {
-      const res = await fetch(`http://localhost:5000/api/user/signout`, {
+      const res = await fetch(`https://subscription-management-dashboard-1.onrender.com/api/user/signout`, {
         method: "POST",
         credentials: "include",
       });
